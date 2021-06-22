@@ -27,7 +27,7 @@ for x in range(30):
 
     ip = data_json['ip']
     # API key from "https://ip-geolocation.whoisxmlapi.com/"
-    geoip = GeoIP("at_yuwKQ8uWtGBfTKthh3tlexWbkUZUk") #Fetching ISP , country using API
+    geoip = GeoIP("#Enter your API key from above website here") #Fetching ISP , country using API
     data = geoip.lookup(ip)
     final_data=data['ip']+','+data['location']['country']+','+data['isp']
     print(final_data)
